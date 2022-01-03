@@ -11,7 +11,7 @@ app.use("/places", require("./controllers/places-control"))
 
 //index
 app.get("/", (req, res) => {
-  res.render("home")
+  res.render("index")
 });
 
 
