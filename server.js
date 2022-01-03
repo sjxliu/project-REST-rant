@@ -2,11 +2,14 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
+// import the control router
+app.use("/places", require("./controllers/places-control"))
+
+
+//index
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
-
-
 
 
 // 404 Needs to be at bottom
