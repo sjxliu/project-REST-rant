@@ -1,7 +1,12 @@
 const router = require("express").Router();
 
+// New above places the exact matching route needs to come first.
+router.get("/new", (req, res) => {
+  res.render("/places/new");
+});
+
 //places
-router.get("/", (req, res) => {
+router.get("/places/:id", (req, res) => {
   let places = [
     {
       name: "H-Thai-ML",
@@ -18,12 +23,7 @@ router.get("/", (req, res) => {
       pic: "../images/pizza.jpg",
     },
   ];
-  res.render("places/index", { places });
-});
-
-// New
-router.get("/new", (req, res) => {
-  res.render("places/new");
+  res.render("/places/index", { places });
 });
 
 module.exports = router;

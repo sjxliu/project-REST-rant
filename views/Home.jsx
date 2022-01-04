@@ -6,7 +6,7 @@ function home() {
     <Def>
       <main>
         <div style={{ textAlign: "center" }}>
-          <h1>HOME</h1>
+          <h1>REST-Rant</h1>
           <img
             src="/images/sushi.jpg"
             alt="Sushi topped with greens"
