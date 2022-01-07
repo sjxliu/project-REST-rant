@@ -6,7 +6,7 @@ function new_form() {
     <Def>
       <main>
         <h1>Add a New Place?!?!</h1>
-        <form method="POST" action="/places">
+        <form method="POST" action="/places/${data.id}?_method=POST">
           <div className="form-group">
             <label htmlFor="name">Place Name</label>
             <input className="form-control" id="name" name="name" required/>
