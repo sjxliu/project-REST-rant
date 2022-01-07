@@ -9,7 +9,7 @@ function error404() {
           <h1>404: PAGE NOT FOUND</h1>
           <p>Oopies doopies, we can't find this page</p>
           <img
-            src="./images/404_error.jpg"
+            src="/images/404_error.jpg"
             alt="Figurine of Human Skeleton Sitting Infront of Computer"
           ></img>
           <div>
