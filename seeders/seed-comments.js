@@ -12,7 +12,7 @@ async function seed() {
   });
   // add that to comment to the places's comment array
   place.comments.push(comment.id);
-
+  await place.save()
   process.exit();
 }
 
