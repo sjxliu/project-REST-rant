@@ -31,7 +31,7 @@ router.get("/", (req, res) => {
   //     pic: "images/catCafeImage.jpg",
   //   },
   // ];
-  res.render("places/index", { places });
+  res.render("places/Index", { places });
 });
 
 //post
@@ -49,7 +49,10 @@ router.get("/:id", (req, res) => {
   } else if (!places[id]) {
     res.render("error404");
   } else {
-    res.render("places/show", { place: places[id], id });
+    res.render("places/show", {
+      place: places[req.params.id],
+      id: req.params.id,
+    });
   }
 });
 
@@ -100,7 +103,7 @@ router.delete("/:id", (req, res) => {
   } else if (!places[id]) {
     res.render("error404");
   } else {
-    places.splice(i, 1);
+    places.splice(id, 1);
     res.redirect("/places");
   }
 });

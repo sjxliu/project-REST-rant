@@ -11,6 +11,8 @@ function error404() {
           <img
             src="/images/404_error.jpg"
             alt="Figurine of Human Skeleton Sitting Infront of Computer"
+            width={1000}
+            height={750}
           ></img>
           <div>
             Photo by:{" "}

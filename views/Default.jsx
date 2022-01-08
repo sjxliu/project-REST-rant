@@ -20,10 +20,10 @@ function Def(html) {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/places">Places</a>
+              <a href="/Show">Places</a>
             </li>
             <li>
-              <a href="/places/new">Add Place</a>
+              <a href="/places/New">Add Place</a>
             </li>
           </ul>
         </nav>
