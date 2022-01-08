@@ -1,7 +1,20 @@
 const React = require("react");
 const Def = require("../Default");
 
-function show() {
+function show(data) {
+  let comments = <h3 className="inactive">No comments here...</h3>;
+  if (data.place.comments.length) {
+    return (
+      <div className="border">
+        <h2 className="rant">{c.rant ? "Rant! 😡" : "Rave! 😻"}</h2>
+        <h4>{c.content}</h4>
+        <h3>
+          <stong> -{c.author}</stong>
+        </h3>
+        <h4>Rating: {c.stars}</h4>
+      </div>
+    );
+  }
   return (
     <Def>
       <main>
@@ -19,8 +32,8 @@ function show() {
             <h3>No ratings yet...</h3>
           </section>
           <section>
-            <h1>Comments</h1>
-            <h3>No comments yet...</h3>
+            <h2>Comments</h2>
+            {comments}
           </section>
           <a href={"/places/${data.i}/edit"} className="btn btn-warning">
             Edit

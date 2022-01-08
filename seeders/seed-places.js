@@ -6,7 +6,7 @@ db.Place.create([
     city: "Seattle",
     state: "WA",
     cuisines: "Thai, Pan-Asian",
-    pic: "/images/h-thai-ml-tables.jpg",
+    pic: "/public/images/h-thai-ml-tables.jpg",
     founded: 1989,
   },
   {
@@ -14,7 +14,7 @@ db.Place.create([
     city: "Phoenix",
     state: "AZ",
     cuisines: "Coffee, Bakery",
-    pic: "/images/coffee-cat.jpg",
+    pic: "/public/images/coffee-cat.jpg",
     founded: 2020,
   },
 ])
