@@ -20,7 +20,7 @@ function Def(html) {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/Show">Places</a>
+              <a href="/places">Places</a>
             </li>
             <li>
               <a href="/places/New">Add Place</a>
