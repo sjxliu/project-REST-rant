@@ -10,23 +10,27 @@ function show() {
         <h3>
           Location: {data.place.city}, {data.place.state}
         </h3>
-        <h4>Cuisines: {data.place.cuisines}</h4>
-        <section>
-          <h1>Ratings</h1>
-          <h3>No ratings yet...</h3>
-        </section>
-        <section>
-          <h1>Comments</h1>
-          <h3>No comments yet...</h3>
-        </section>
-        <a href={"/places/${data.i}/edit"} className="btn btn-warning">
-          Edit
-        </a>
-        <form method="POST" action={"/places/${data.id}?_method=DELETE"}>
-          <button type="submit" className="btn btn-danger">
-            Delete
-          </button>
-        </form>
+        <div className="col-sm-6">
+          <h2>Description</h2>
+          <h3>{data.place.showEstablished()}</h3>
+          <h4>Serving {data.place.cuisines}</h4>
+          <section>
+            <h1>Ratings</h1>
+            <h3>No ratings yet...</h3>
+          </section>
+          <section>
+            <h1>Comments</h1>
+            <h3>No comments yet...</h3>
+          </section>
+          <a href={"/places/${data.i}/edit"} className="btn btn-warning">
+            Edit
+          </a>
+          <form method="POST" action={"/places/${data.id}?_method=DELETE"}>
+            <button type="submit" className="btn btn-danger">
+              Delete
+            </button>
+          </form>
+        </div>
       </main>
     </Def>
   );
