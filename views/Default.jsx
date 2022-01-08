@@ -14,18 +14,26 @@ function Def(html) {
         <link rel="stylesheet" href="/public/style.css"></link>
       </head>
       <body>
-        <nav>
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/places">Places</a>
-            </li>
-            <li>
-              <a href="/places/New">Add Place</a>
-            </li>
-          </ul>
+        <nav class="navbar navbar-light bg-light">
+          <div>
+            <ul>
+              <li class="nav-item active">
+                <a class="nav-link" href="/">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/places">
+                  Places
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/places/New">
+                  Add Place
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
         {html.children}
       </body>
